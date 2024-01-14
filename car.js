@@ -116,6 +116,7 @@ class Car {
     if (fuelQuantity <= 0) {
       throw new Error("Incorrect amount of fuel for refueling");
     }
+
     if (this.#currentFuelVolume + fuelQuantity > this.#maxFuelVolume) {
       throw new Error("Fuel tank is full");
     }
